@@ -1,0 +1,50 @@
+html,body{
+  height: 100%;
+  width: 100%;
+}
+:root{
+  --main-upper-background: #F6C844;
+}
+/* In order to make the items move more to the center */
+.navigationItems{
+  margin-right: 6%; 
+}
+
+
+/* Navbar Menu */
+.navbarMenuSettings{
+  background-color: var(--main-upper-background)
+}
+.outerContainer{
+  background-color: var(--main-upper-background)
+} 
+.detailsSettings{
+  padding: 8%;
+}
+.fontDetails{
+  font-weight: 300;
+  font-size:45px;
+  text-transform:none;
+  text-align: center;
+}
+.columnPadding{
+  padding: 9%;
+}
+.red-detail{
+  color:#E0000E;
+}
+.footer{
+  background-color: var(--main-upper-background);
+}
+.textAtFooter{
+  color: #151515;
+}
+.buttonFooter{
+  background: transparent;
+  color: #151515;
+  border: 2px solid #151515;
+}
+.buttonFooter:hover{
+  color: #535461;
+  border: 2px solid #535461;
+}

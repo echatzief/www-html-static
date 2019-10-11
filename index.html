@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.ico"" type="image/x-icon">
+  </head>
+  <body>
+
+
+    <!-- Script in order to use the navbar on mobile-->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+
+            });
+          });
+        }
+    });
+  </script>
+
+  <script>
+    $('document').ready(function(){
+      var typed3 = new Typed('#letters', {
+        strings: [
+          '<strong style="font-size:30px;font-family: "B612", sans-serif;">Hi! Im Lefteris <i>strings</i></strong>', 
+          '<strong style="font-size:30px;font-family: "B612", sans-serif;">Hi! Im Lefteris <br/> and i am studing <br/> software <br/> engineering.</strong>', 
+          '<strong style="font-size:30px;font-family: "B612", sans-serif;">I love <br/> really to code <br/> and design.</strong>'
+        ],
+        typeSpeed: 45,
+        backSpeed: 15,
+        smartBackspace: true, // this is a default
+        loop: true,
+        showCursor: false,
+      });
+      var typed3 = new Typed('#lettersBottom  ', {
+        strings: ['Wanna see my work?'],
+        loop: false,
+        typeSpeed: 45,
+        showCursor: false,
+      });
+    });
+  </script>
+
+  <nav class="navbar is-transparent navbarMenuSettings">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="./img/terminal.png" alt="Bulma: a modern CSS framework based on Flexbox" width="32px" height="64">
+      </a>
+      <div class="navbar-burger burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  
+    <div id="navMenu" class="navbar-menu navbarMenuSettings">
+      <div class="navbar-end navigationItems">
+        <a class="navbar-item" href="index.html">
+          <img src="./img/home.png" alt="Bulma: a modern CSS framework based on Flexbox" width="32px" height="64">
+        </a>
+        <a class="navbar-item" href="./pages/info.html">
+          <img src="./img/info.png" alt="Bulma: a modern CSS framework based on Flexbox" width="32px" height="64">
+        </a>
+        <a class="navbar-item" href="./pages/skills.html">
+          <img src="./img/skills.png" alt="Bulma: a modern CSS framework based on Flexbox" width="32px" height="64">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="navbarMenuSettings">
+    <div class="container">
+      <div class="columns">
+        <div class="column columnPadding" id="letters">
+          
+        </div>
+        <div class="column columnPadding">
+          <img src="./img/undraw_hacker_mind_6y85.svg" alt="Bulma: a modern CSS framework based on Flexbox">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container detailsSettings">
+    <h1 class="fontDetails">
+      Lefteris Chatziefraimidis <span class="red-detail">_</span> 
+    </h1>
+    <div class="columns columnPadding2">
+      <div class="column is-one-fifth" style="font-size:45px;text-transform:uppercase;text-align:right;">
+        <span class="red-detail">Who</span><br/>
+        <span>Am</span> <br/>
+        <span>I</span>
+      </div>
+      <div class="column columnPadding2">
+        <p>
+            As already mentioned, my name is Lefteris Chatziefraimidis.Born in Volos and i am currently 
+            an undergraduate student at the Department of Electrical and Computer Engineering belongs to 
+            the School of Engineering of the University of Thessaly, Greece and I am about to finish my studies in a couple of months.
+            Coming from a field of study like Computer Science, where things are advancing in extremely high speeds, it is, and has always been 
+            from early on, expected of me to find ways of coping with it. In order to expand my knowledge on this field beyond what my University offers, 
+            I tend to take online courses in order to keep up with the new methods and technics that are evolving.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container columnPadding2">
+    <div class="has-text-centered columnPadding2">
+      <img src="./img/undraw_coding_6mjf.svg" alt="Bulma: a modern CSS framework based on Flexbox" height="400" width="400">
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <div class="container">
+        <h5 id="lettersBottom"></h4>
+        <a class="button is-rounded buttonFooter" href="https://github.com/echatzief"><img src="./img/arrow.png" height="20" width="20"/></a>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>

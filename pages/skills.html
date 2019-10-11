@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/skills.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css//list.min.css">
+    <link rel="shortcut icon" href="../img/favicon.ico"" type="image/x-icon">
+  </head>
+  <body>
+
+    <!-- Script in order to use the navbar on mobile-->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+
+            });
+          });
+        }
+    });
+  </script>
+
+<script>
+    $('document').ready(function(){
+      var typed3 = new Typed('#lettersBottom  ', {
+        strings: ['Wanna see my work?'],
+        loop: false,
+        typeSpeed: 45,
+        showCursor: false,
+      });
+    });
+  </script>
+
+
+  <nav class="navbar is-transparent navbarMenuSettings">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../index.html">
+        <img src="../img/terminal.png" alt="Bulma: a modern CSS framework based on Flexbox" width="32px" height="64">
+      </a>
+      <div class="navbar-burger burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  
+    <div id="navMenu" class="navbar-menu navbarMenuSettings">
+      <div class="navbar-end navigationItems">
+        <a class="navbar-item" href="../index.html">
+          <img src="../img/home.png" alt="Bulma: a modern CSS framework based on Flexbox" width="32px" height="64">
+        </a>
+        <a class="navbar-item" href="./info.html">
+          <img src="../img/info.png" alt="Bulma: a modern CSS framework based on Flexbox" width="32px" height="64">
+        </a>
+        <a class="navbar-item" href="./skills.html">
+          <img src="../img/skills.png" alt="Bulma: a modern CSS framework based on Flexbox" width="32px" height="64">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="outerContainer">
+    <div class="container detailsSettings">
+      <h1 class="fontDetails">
+        Skills <span class="red-detail">_</span> 
+      </h1>
+    </div>
+  </div>
+  
+  <div class="container has-text-centered" style="margin-top:8%;">
+    <div class="columns">
+      <div class="column columnPadding">
+        <ul class="dots">
+
+          <li style="padding: 4%">
+            <i class="dots-icon"></i>
+            <div class="dots-label"> 
+              <h4>Programming</h4> 
+              <p>C, C++, Java, Go, Python, MATLAB, MySQL, Javascript, R</p> 
+            </div>
+          </li>
+
+          <li style="padding: 4%">
+            <i class="dots-icon"></i> 
+            <div class="dots-label"> 
+              <h4>Web Development</h4> 
+              <p>HTML, CSS, Javascript, jQuery</p> 
+            </div> 
+          </li>
+          <li style="padding: 4%">
+            <i class="dots-icon"></i> 
+            <div class="dots-label"> 
+              <h4>Frameworks</h4> 
+              <p>Laravel, React, Vue,Express JS</p> 
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="column columnPadding">
+        <ul class="dots">
+          <li style="padding: 4%">
+            <i class="dots-icon"></i> 
+            <div class="dots-label"> 
+              <h4>Operating Systems</h4> 
+              <p>Windows, Unix, Android</p> 
+            </div>
+          </li>
+
+          <li style="padding: 4%">
+            <i class="dots-icon"></i> 
+            <div class="dots-label"> 
+              <h4>Other</h4> 
+              <p>Git, npm, ESLint</p> 
+            </div> 
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container has-text-centered">
+    <div class="columns">
+      <div class="column">
+          <img src="../img/undraw_developer_activity_bv83.svg" width="400" height="400"/>
+      </div>
+      <div class="column">
+        <img src="../img/undraw_teaching_f1cm.svg" width="400" height="400"/>
+      </div>
+    </div>
+    <div style="margin-top:8%;">
+      <strong>
+        Once you stop learning, you start dying. <br/>
+        ~ Albert Einstein ~
+      </strong>
+    </div>
+  </div>
+  <footer class="footer" style="margin-top:8%;">
+    <div class="content has-text-centered">
+      <div class="container">
+        <h5 id="lettersBottom"></h4>
+        <a class="button is-rounded buttonFooter" href="https://github.com/echatzief"><img src="../img/arrow.png" height="20" width="20"/></a>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
